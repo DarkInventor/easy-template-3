@@ -4,7 +4,7 @@ import { MacbookScroll } from "./ui/macbook-scroll";
 
 export function MacbookScrollDemo() {
   return (
-    <div className="overflow-hidden bg-[#0B0B0F] w-full text-white">
+    <div className="overflow-hidden bg-[#0B0B0F] w-full text-white hidden lg:block md:block">
       <MacbookScroll
         title={
           <span className="text-white">
