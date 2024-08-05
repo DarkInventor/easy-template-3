@@ -2,6 +2,8 @@
 import { motion } from "framer-motion";
 import { HeroHighlight } from "./ui/hero-highlight";
 import { Highlight } from "./ui/hero-highlight";
+import { AnimatedTooltipPreview } from "./animated-tooltip-demo";
+import { AnimatedTooltip } from "./ui/animated-tooltip";
 
 export function HeroHighlightDemo() {
   return (
@@ -26,7 +28,7 @@ export function HeroHighlightDemo() {
             <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
           </span>
           <div className="relative flex space-x-2 items-center z-10 rounded-full bg-zinc-950 py-0.5 px-4 ring-1 ring-white/10">
-            <span>{`Introducing Easy Template 3`}</span>
+            <span>{`Introducing Easy UI`}</span>
             <svg
               width="16"
               height="16"
@@ -45,19 +47,22 @@ export function HeroHighlightDemo() {
           </div>
           <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40"></span>
         </button>
-        With insomnia, nothing&apos;s real. Everything is far away. Everything
-        is a{" "}
+        100% High Quality Collection of
+        {" "}
         <Highlight className="text-black dark:text-white">
-          copy, of a copy, of a copy.
+            50+ Next.js Templates
         </Highlight>
         
       </motion.h1>
-      <button className="p-[3px] relative mx-auto flex top-6 ">
+      <button className="p-[3px] relative mx-auto flex top-6">
         <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-xl" />
-        <div className="px-6 py-4 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent text-lg">
+        <div className="px-5 py-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent text-lg">
           Get Started
         </div>
       </button>
+      
+      <AnimatedTooltipPreview />
+        
     </HeroHighlight>
   );
 }

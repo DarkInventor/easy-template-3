@@ -8,7 +8,7 @@ export function MacbookScrollDemo() {
       <MacbookScroll
         title={
           <span className="text-white">
-            Built using Aceternity UI for Easy UI Lovers ❤️
+            Featured By Easy UI ❤️
           </span>
         }
         badge={
