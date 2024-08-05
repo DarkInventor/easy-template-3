@@ -1,7 +1,9 @@
 import { AnimatedTooltipPreview } from "@/components/animated-tooltip-demo";
 import { FloatingNavbar } from "@/components/floating-navbar";
+import { GoogleGeminiEffectDemo } from "@/components/google-gemini-effect-demo";
 import { HeroHighlightDemo } from "@/components/hero-highlight-page";
 import { MacbookScrollDemo } from "@/components/macbook-scroll-demo";
+import { SiteFooter } from "@/components/site-footer";
 import { TabsDemo } from "@/components/tabs-demo";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 import { TextRevealCard } from "@/components/ui/text-reveal-card";
@@ -21,6 +23,8 @@ export default function Home() {
        
         <MacbookScrollDemo />
         <TabsDemo />
+        <GoogleGeminiEffectDemo />
+        <SiteFooter />
       </div>
     </main>
   );
